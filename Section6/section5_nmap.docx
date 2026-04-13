@@ -1,0 +1,3 @@
+Section 6: XSS
+<script>alert('XSS')</script>
+XSS allows attackers to run scripts in browser.
