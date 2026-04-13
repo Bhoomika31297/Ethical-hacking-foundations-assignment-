@@ -1,0 +1,13 @@
+Section 4: C Programming
+Pointer Example
+#include<stdio.h>
+int main(){
+ int port=80;
+ int *p=&port;
+ printf("%d",*p);
+ *p=443;
+ printf("%d",port);
+}
+Buffer Overflow
+char buffer[16];
+gets(buffer); // unsafe
