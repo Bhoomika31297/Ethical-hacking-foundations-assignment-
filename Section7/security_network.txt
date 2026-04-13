@@ -1,0 +1,2 @@
+Section 7: Bonus Security Audit Tool
+print("Simple audit tool placeholder")
