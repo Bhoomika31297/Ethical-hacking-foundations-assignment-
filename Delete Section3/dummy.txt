@@ -1,0 +1,4 @@
+Section 3: Networking Concepts
+OSI Model has 7 layers: Physical, Data Link, Network, Transport, Session, Presentation,
+Application. TCP works at Transport layer. Private IP: 192.168.x.x is private. TCP is reliable, UDP is
+faster. NAT converts private IP to public IP
