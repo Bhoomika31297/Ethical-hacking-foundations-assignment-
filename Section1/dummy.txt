@@ -1,0 +1,22 @@
+Linux commands are essential for penetration testing and system administration.
+ls -la
+find ~ -name "*.txt"
+tail -n 20 scan_results.txt
+grep -c "OPEN" scan_results.txt
+mkdir -p security/tools/scanners
+chmod +x exploit.sh
+whoami && hostname && pwd
+find . -mtime -7
+grep -r "password" .
+uname -a
+Bash Script: Port Scanner
+#!/bin/bash
+if [ -z "$1" ]; then
+ echo "Usage: $0 <IP>"
+ exit 1
+fi
+IP=$1
+ports=(21 22 80 443 3306)
+for port in "${ports[@]}"; do
+ nc -zv $IP $port
+done
